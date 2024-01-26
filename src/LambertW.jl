@@ -113,7 +113,7 @@ function lambertw_branch_zero(x::T, maxits)::T where T<:Real
         llx = log(lx)
         x0 = lx - llx - log1p( - llx / lx) * itwo_t
     else
-        x0 = (567//1000) * x
+        x0 = (567/1000) * x
     end
     return lambertw_root_finding(x, x0, maxits)
 end
